@@ -1,0 +1,86 @@
+<html lang="es">
+  <head>
+  </head>
+  <body>
+    <div data-role="page" id="pagos">
+       <div role="main" class="ui-content">
+            <div data-role="header">
+                <h3 id="InfoPagos"></h3>
+            </div>
+            <div class="ui-content">
+                <center><button  id="liVerCuentas" class="btn-burbit"><span class="icon-bookmark"></span> Ver Pagos Anteriores</button></center>
+                <center><button  onclick="adjuntarpago()" class="btn-burbit"><span class="icon-camera"></span> Adjuntar Imagen</button></center>
+                <center>
+                    <div id="espacioFoto">
+                      
+                    </div>    
+                    <label id="labImagen" style="font-size: 4px" ></label>
+                </center>
+                <form name="formPagos" id="formPagos" >
+                    <div >
+                        <select class="lista-izq" id="slcPlan" >
+                            <option value="1">Pago Mensual</option>
+                            <option value="1">Otro Pago</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label >Monto</label>
+                        <input id="tMonto" value="0" </input>
+                    </div>
+                    <div class="col-sm-6">
+                        <label >N&uacute;mero de referencia</label>
+                        <input  id="tReferencia" </input>
+                    </div>
+                    <div >
+                        <label >Fecha de Registro</label>
+                        <input type="date" id="dFechaRegistro" </input>
+                        <label id="labDescripion" >Observaciones</label>
+                        <input id="tDescripcion" </input>
+                        <label >Cuenta destino</label>
+                        <select class="lista-izq" id="slcDestino">
+
+                        </select>
+                    </div>
+
+                </form>
+                <br>
+                
+
+                <center><button  id="btRegistrarPago" class="btn-burbit"><span class="icon-credit-card"></span> Registrar Pago</button></center>
+                <center><button  id="volverInicio" class="btn-burbit"><span class="icon-home"></span> Volver Atras</button></center>
+            </div>
+        </div>
+    </div>
+</body>
+  <!-- <div data-role="content" id="zonaMeses">
+                        <fieldset data-role="controlgroup" data-type="vertical" data-theme="b" data-mini="true" id="fsLista"><legend>Cuota(s) Pendientes:</legend>
+                            <input type="checkbox" name="mes" id="01">
+                            <label style="font-size: 8px;" for="01" id="en">Enero</label>
+                            <input type="checkbox" name="mes" id="02">
+                            <label for="02" id="fe">Febrero</label>
+                            <input type="checkbox" name="mes" id="03">
+                            <label for="03"id="ma">Marzo</label>
+                            <input type="checkbox" name="mes" id="04">
+                            <label for="04" id="ab">Abril</label>
+                            <input type="checkbox" name="mes" id="05">
+                            <label for="05" id="my">Mayo</label>
+                            <input type="checkbox" name="mes" id="06">
+                            <label for="06" id="ju">Junio</label>
+                            <input type="checkbox" name="mes" id="07">
+                            <label for="07"  id="jl">Julio</label>
+                            <input type="checkbox" name="mes" id="08">
+                            <label for="08" id="ag">Agosto</label>
+                            <input type="checkbox" name="mes" id="09">
+                            <label for="09" id="se">Septiembre</label>
+                            <input type="checkbox" name="mes" id="10">
+                            <label for="10" id="oc">Octubre</label>
+                            <input type="checkbox" name="mes" id="11">
+                            <label for="11" id="no">Noviembre</label>
+                            <input type="checkbox" name="mes" id="12">
+                            <label for="12" id="di">Diciembre</label> 
+                        </fieldset>
+                    </div> -->
+</html>
+
+
+

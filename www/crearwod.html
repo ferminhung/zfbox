@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div data-role="page" id="crearwod">
+    <div class="bar">
+        <a class="btn-for-slider icon-eye" href="#slidermenu"></a>
+        <img id="btHome" class="img-logo" src="img/logo-foot.png">
+        <div class="btn-top-sush">
+          <div class="small-text text-white">BurBit</div>
+          <div class="big-text text-red">Crear WOD</div>
+        </div>
+    </div>
+    <div data-role="main" class="ui-content">
+          <label >Fecha</label>
+          <input type="date" id="tFecha" </input>
+          <div id="espaciowod">
+              
+              <div id="r0">
+                <div class="col-sm-10" style="text-align: center;">
+                    <label>*</label>
+                </div>
+                <div class="col-sm-60">
+                    <label>Cantidad</label>
+                </div>
+                <div class="col-sm-20">
+                    <label>Ejercicio</label> 
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                    <label>*</label>
+                </div>
+              </div>
+              <div id="r1">
+                <div class="col-sm-10" style="text-align: center;">
+                  <a onclick="cambiarplan(1)"><span class="icon-plus"></span></a>
+                </div>
+                <div class="col-sm-20">
+                  <input type="text" id="tCant1" > </input>
+                </div>
+                <div class="col-sm-60">
+                  <input type="text" id="tE1" > </input>
+                </div>
+                
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-up"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-minus"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-down"></span></a>
+                </div>
+              </div>
+              <div id="r2">
+                <div class="col-sm-10" style="text-align: center;">
+                  <a onclick="cambiarplan(2)"><span class="icon-plus"></span></a>
+                </div>
+                <div class="col-sm-20">
+                  <input type="text" id="tCant2" > </input>
+                </div>
+                <div class="col-sm-60">
+                  <input type="text" id="tE2" > </input>
+                </div>
+                
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-up"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-minus"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-down"></span></a>
+                </div>
+              </div>
+              <div id="r3">
+                <div class="col-sm-10" style="text-align: center;">
+                  <a onclick="cambiarplan(3)"><span class="icon-plus"></span></a>
+                </div>
+                <div class="col-sm-20">
+                  <input type="text" id="tCant3" > </input>
+                </div>
+                <div class="col-sm-60">
+                  <input type="text" id="tE3" > </input>
+                </div>
+                
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-up"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-minus"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-down"></span></a>
+                </div>
+              </div>
+              <div id="r4">
+                <div class="col-sm-10" style="text-align: center;">
+                  <a onclick="cambiarplan(4)"><span class="icon-plus"></span></a>
+                </div>
+                <div class="col-sm-20">
+                  <input type="text" id="tCant4" > </input>
+                </div>
+                <div class="col-sm-60">
+                  <input type="text" id="tE4" > </input>
+                </div>
+                
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-up"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-minus"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-down"></span></a>
+                </div>
+              </div>
+              <div id="r5">
+                <div class="col-sm-10" style="text-align: center;">
+                  <a onclick="cambiarplan(5)"><span class="icon-plus"></span></a>
+                </div>
+                 <div class="col-sm-20">
+                  <input type="text" id="tCant5" > </input>
+                </div>
+                <div class="col-sm-60">
+                  <input type="text" id="tE5" > </input>
+                </div>
+               
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-up"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-minus"></span></a>
+                </div>
+                <div class="col-sm-10" style="text-align: center;">
+                  <a ><span class="icon-arrow-down"></span></a>
+                </div>
+              </div>
+       
+          </div>
+          <br>
+          <center><button  id="btAgregarItem" class="btn-burbit" ><span class="icon-plus"></span> Agregar Item </button></center>
+          <center><button  id="btGrabarWOD" class="btn-burbit" ><span class="icon-checkmark"></span> Almacenar WOD </button></center>
+          <center><button  id="iratras" class="btn-burbit" ><span class="icon-arrow-left"></span> Menu WOD</button></center>
+          <br>
+          <br/>
+     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+      <div id="footer" data-role="footer" data-position="fixed" style="background-color: black;" align="center">
+            <button id="volver" class="icon-arrow-left btn-left"></button>
+            <button class="icon-home-pic" id="btHome"></button>
+            <button  class="btn-exit icon-menu  btn-right"></button>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+      
+
+</html>

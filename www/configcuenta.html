@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div data-role="page" id="configcuenta">
+            <div role="main" class="ui-content">
+                <div data-role="header">
+                    <h3 id="InfoAtleta"><span class="icon-user"></span> Ingresa Info</h3>
+                </div>
+                <div class="ui-content">
+                    <form name="formContacto">
+                        <label id="labNombre" >Atleta</label>
+                        <input id="tNombre" ></input>
+                        <label >Correo electr&oacute;nico</label>
+                        <input  id="tEmail" ></input>
+                        <label >Clave Secreta</label>
+                        <input id="tClave1" ></input>
+                        <label >Confirmaci&oacute;n de Clave Secreta</label>
+                        <input id="tClave2" ></input>
+                        <label >Permitir Acceso por Codigo Web</label>
+                        <select id="slcActivarCodigo">
+                          <option value="SI">SI</option>
+                          <option value="NO">NO</option>
+                        </select> 
+                        <label >Telefono Celular</label>
+                        <input id="tMovil" ></input>
+                        <br>
+                        <br>
+						<center><button  id="btModificar" class="btn-burbit"><span class="icon-checkmark"></span></span> Crear Usuario</button></center>
+						<center><button  onclick="window.location.href='index.html'" class="btn-burbit"><span class="icon-home"></span></span> Volver a Inicio</button></center>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

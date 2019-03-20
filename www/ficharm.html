@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div data-role="page" id="ficharm">
+        <div data-role="panel" id="slidermenu"> 
+    	<h3>Escoge tu ejercicio favorito</h3><br>
+	        <ul data-role="listview" >
+		          	<li><a id="Burpes" ><span class="icon-user"></span> Pull-Ups</a></li>
+          	</ul>
+
+	    </div>
+        <div data-role="main" class="ui-content">
+			<div class="bar">
+				<a class="btn-for-slider icon-search" href="#slidermenu"></a>
+				<img id="btHome" class="img-logo" src="img/logo-foot.png">
+				<div class="btn-top-sush"><div class="small-text text-white">BurBit</div><div class="big-text text-red"><span class="icon-fire">Ficha RM</div></div>
+			</div>
+			<br>
+			<form name="formRM">
+				<div class="col-sm-6">
+		            <label >Deadlift</label>
+		            <input id="tRM1" />
+		            <label >Squat Clean</label>
+		            <input id="tRM2" />
+		            <label >Power Clean</label>
+		            <input id="tRM3" />
+		            <label >Power Snatch</label>
+		            <input id="tRM4" />
+		        </div>
+		        <div class="col-sm-6">
+		            <label >Back Squat</label>
+		            <input id="tRM5" />
+		            <label >Front Squat</label>
+		            <input id="tRM6" />
+		            <label >Push Press</label>
+		            <input id="tRM7" />
+		            <label >Thruster</label>
+		            <input id="tRM8" />
+            	</div>
+			</form>
+			<br>
+			<center><button  id="liGuardarRM" class="btn-burbit"><span class="icon-folder-plus"></span></span> Guardar Ficha RM</button></center>
+			<div id="footer" data-role="footer" data-position="fixed" style="background-color: black;" align="center">
+			    	<button id="volver" class="icon-arrow-left btn-left"></button>
+			    	<button class="icon-home-pic" id="btHome"></button>
+			    	<button class="btn-exit icon-menu  btn-right"></button>
+			</div>
+		</div>      
+	</div>
+</body>
+</html>

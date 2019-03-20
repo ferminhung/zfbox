@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div data-role="page" id="ranking">
+        <div data-role="panel" id="slidermenu"> 
+    	<h3>Escoge tu ejercicio favorito</h3><br>
+	        <ul data-role="listview" >
+		          	<li><a id="Burpes" ><span class="icon-user"></span> Burpes</a></li>
+          	</ul>
+	    </div>
+        <div data-role="main" class="ui-content">
+			<div class="bar">
+				<a class="btn-for-slider icon-search" href="#slidermenu"></a>
+				<img id="btHome" class="img-logo" src="img/logo-foot.png">
+				<div class="btn-top-sush"><div class="small-text text-white">BurBit</div><div class="big-text text-red">Ranking</div></div>
+			</div>
+			<br>
+			<center><button  id="liRankingWOD" class="btn-burbit"><span class="icon-meter"></span> Tu WOD Time/Rounds</button></center>
+			<center><button  id="verRankingWOD" class="btn-burbit"><span class="icon-trophy"></span> WOD Ranks</button></center>
+			<br>
+            <label >Weight Lifting</label>
+            <select id="slcEjercicio">
+            	<option value="000" >Selecciona WL </option>
+            	<option value="RM1" >Deadlift</option>
+            	<option value="RM2" >Squat Clean</option>
+	            <option value="RM3" >Power Clean</option>
+	            <option value="RM4" >Power Snatch</option>
+	            <option value="RM5" >Back Squat</option>
+	            <option value="RM6" >Front Squat</option>
+	            <option value="RM7" >Push Press</option>
+	            <option value="RM8" >Thruster</option>
+			</select>
+            <label >Sexo</label>
+            <select id="slcSexo">
+              <option value="0">-------</option>
+              <option value="F">Femenino</option>
+              <option value="M">Masculino</option>
+            </select> 
+            <label >Nivel</label>
+            <select id="slcNivel">
+              <option value="0">-------</option>
+              <option value="B">Beginner</option>
+              <option value="S">Scaled</option>
+              <option value="R">Rx</option>
+            </select> 			
+            <div id="itemswod">
+
+			</div>
+			<center><button  id="liRankRM" class="btn-burbit"><span class="icon-rocket"></span> RM Ranks</button></center>
+			<div id="footer" data-role="footer" data-position="fixed" style="background-color: black;" align="center">
+			    	<button id="volver" class="icon-arrow-left btn-left"></button>
+			    	<button class="icon-home-pic" id="btHome"></button>
+			    	<button  class="btn-exit icon-menu  btn-right"></button>
+			</div>
+		</div>      
+	</div>
+</body>
+</html>

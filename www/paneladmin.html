@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/panel_main.less.css" class="main-less">
+        <link rel="stylesheet" href="fonts/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script src="panel.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+    </head>
+    
+    <body>
+
+        <div data-role="page" id="paneladmin">
+          <div class="bar">
+                <a class="btn-for-slider icon-menu" href="#slidermenu"></a>
+                <img id="btHome" class="img-logo" src="img/logo-foot.png">
+                <div class="btn-top-sush"><div class="small-text text-white">BurBit</div><div class="big-text text-red">Box Management</div></div>
+            </div>
+          <div data-role="panel" id="slidermenu"> 
+            <br><br><br>
+            <label>Usuario y Comunidad</label>
+            <h3 id="hdCabeceraUser" style="background-color: #b9770e "><span class="icon-user"></span>Administrador</h3>    
+            <br><br><br>
+            <ul data-role="listview" id="listaizq">
+              <li class="dark-red"><a id="liStalk" class="lista-izq"><span class="icon-eye"></span> Actividad</a></li>
+            </ul>
+            <div id="espacioStalk"> </div>
+            <br><br>
+            <ul data-role="listview"  >
+              <li class="orange"><a id="liCuenta" class="lista-izq"><span class="icon-user"></span>  Lista de Atletas</a></li>
+              <li class="red"><a id="liSolicitudes" class="lista-izq"><span class="icon-point-up"></span> Solicitudes al Box</a></li>
+              <li class="yellow"><a id="liForo" class="lista-izq"><span class="icon-info"></span> Foro CrossFiters</a></li>
+              <li class="wine"><a id="irDiccionario" class="lista-izq"><span class="icon-books"></span> Diccionario</a><br></li>
+              <li class="purple"><a onclick="cerraradmin()" class="lista-izq"><span class="icon-exit"></span> Cerrar Sesi&oacute;n</a><br></li>
+            </ul>
+          </div>              
+          <div role="main" class="ui-content ui-content-2">
+                <center>
+                  <div id="espaciocartel">
+                      <img id="" class="ui-img2" height="180" src="img/img0.png">
+                  </div>
+                  <center><button  onclick="cambiarimagen()" class="btn-burbit"><span class="icon-eye"></span></span> Cambiar Imagen</button></center> 
+              </center>  
+                
+              <div data-role="header">
+                <h1 id="hdHeadPanel"><span class="icon-hour-glass"></span> Espera un momento, cargando....</h1>
+              </div>
+              <div id="menuadmin">
+                <center><button  id="liReservas" class="btn-burbit-grey" ><span class="icon-checkmark"></span></span> 0 Reservas en el dia</button></center>                
+                <center><button  id="liWOD" class="btn-burbit"><span class="icon-rocket"></span></span> 0 vistas del WOD</button></center>
+                <center><button  id="btActivos" class="btn-burbit"><span class="icon-shield"></span> Atletas Activos</button></center>
+                <center><button  id="liPagos" class="btn-burbit-grey"><span class="icon-credit-card"></span></span> 0 Pagos Registrados</button></center>                
+                <center><button  id="liRanking" class="btn-burbit"><span class="icon-trophy"></span> Marcas Registradas</button></center>
+                <center><button  id="liWOD" class="btn-burbit"><span class="icon-heart"></span></span> 0 Me Gusta en el WOD</button></center>
+                <center><button  id="liPerfil" class="btn-burbit"><span class="icon-user"></span></span> Mi Perfil</button></center>                
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Copyright 2018 - BurBit (MVP Movil)</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

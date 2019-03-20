@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/panel_main.less.css" class="main-less">
+        <link rel="stylesheet" href="fonts/style.css">
+        <meta charset="UTF-8"> </meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> </meta>
+
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script src="panel.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+    </head>
+    
+    <body>   
+        <div data-role="page" id="reportepagos">
+          <div class="bar">
+                <a class="btn-for-slider icon-menu" href="#slidermenu"></a>
+                <img id="btHome" class="img-logo" src="img/logo-foot.png">
+                <div class="btn-top-sush"><div class="small-text text-white">Reporte de</div><div class="big-text text-red" >Pagos Anteriores</div></div>
+            </div>
+            
+          <div role="main" class="ui-content ui-content-2">
+              
+                   
+              <center>  <h3 id="hdHeadPanel"><span class="icon-hour-glass"></span> Espera un momento, cargando....</h3> </center>
+  
+              <div id="espacioReporte"> </div>
+
+
+              <center><button  id="liPagos" class="btn-burbit"><span class="icon-credit-card"></span></span> Ir a Gestion de Pagos</button></center>
+              <center><button  id="irInvitado" class="btn-burbit"><span class="icon-user-plus"></span></span> Ir a Inicio</button></center>
+
+        </div>
+    </body>
+
+</html>

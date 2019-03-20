@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/panel_main.less.css" class="main-less">
+        <link rel="stylesheet" href="fonts/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script src="panel.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+    </head>
+    
+    <body>   
+        <div data-role="page" id="menuwod">
+                      
+          <div role="main" class="ui-content ui-content-2">
+              <div class="bar">
+                <a class="btn-for-slider icon-menu" href="#slidermenu"></a>
+                <img id="btHome" class="img-logo" src="img/logo-foot.png">
+                <div class="btn-top-sush"><div class="small-text text-white">BurBit Box Management</div><div class="big-text text-red">Gestion de WODs</div></div>
+              </div>  
+ 
+              <div data-role="header">
+                <h1 id="hdHeadPanel"><span class="icon-hour-glass"></span> ....</h1>
+              </div>
+                <center><button  id="liVerWOD" class="btn-burbit"><span class="icon-eye"></span></span> Ver WOD</button></center>
+                <center><button  id="liCrearWOD" class="btn-burbit"><span class="icon-rocket"></span></span> Crear WOD</button></center>                
+                <center><button  id="liPerfil" class="btn-burbit"><span class="icon-user"></span></span> Resumen Semanal</button></center>                
+                <center><button  id="liCerrar" class="btn-burbit"><span class="icon-back"></span></span> Ir Atras</button></center>
+            <br>
+            <div id="listaVistas">
+
+            </div>   
+            <br>
+            <div data-role="footer" data-position="fixed">
+                <h1>Copyright 2018 - BurBit (MVP Movil)</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

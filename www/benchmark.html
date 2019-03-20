@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div data-role="page" id="benchmark">
+        <div data-role="panel" id="slidermenu"> 
+    	<h3>Escoge tu ejercicio favorito</h3><br>
+	        <ul data-role="listview" >
+		          	<li><a id="Burpes" ><span class="icon-user"></span> Burpes</a></li>
+          	</ul>
+	    </div>
+        <div data-role="main" class="ui-content">
+			<div class="bar">
+				<a class="btn-for-slider icon-search" href="#slidermenu"></a>
+				<img id="btHome" class="img-logo" src="img/logo-foot.png">
+				<div class="btn-top-sush"><div class="small-text text-white">BurBit</div><div class="big-text text-red">BenchMark Zone</div></div>
+			</div>
+			<br>
+            <select id="slcBenchmark">
+            	<option value="000" >Opciones de Benchmarks AQUI</option>
+            	<option value="B1" >ANGIE</option>
+            	<option value="B2" >BARBARA</option>
+	            <option value="B3" >CHELSEA</option>
+	            <option value="B4" >CINDY</option>
+	            <option value="B5" >DIANE</option>
+	            <option value="B6" >ELIZABETH</option>
+	            <option value="B7" >FRAN</option>
+	            <option value="B8" >GRACE</option>
+            	<option value="B9" >HELEN</option>
+            	<option value="B10" >ISABEL</option>
+            	<option value="B11" >JACKIE</option>
+            	<option value="B12" >KAREN</option>
+            	<option value="B13" >LINDA</option>
+            	<option value="B14" >MARY</option>
+            	<option value="B15" >NANCY</option>
+            	<option value="M1" >MURPH</option>
+            	<option value="M2" >1/2 MURPH</option>
+            	<option value="M3" >1/4 MURPH</option>
+			</select>            
+			
+			<div id="itemsBench">
+				<center><h3>Selecciona un BenchMark</h3></center>
+			</div>
+            <label >    </label><label id="labComentario" ></label>
+			<center><button  id="liGuardarTiempo" class="btn-burbit"><span class="icon-clock"></span></span> Guardar Tiempo/Rondas</button></center>
+			<center><button  id="liTiempos" class="btn-burbit"><span class="icon-user-plus"></span></span> Mis Marcas</button></center>
+			<div id="itemsTiempos">
+			</div>
+			<center><button  id="liRetar" class="btn-burbit"><span class="icon-rocket"></span></span> Retar</button></center>
+			<div id="footer" data-role="footer" data-position="fixed" style="background-color: black;" align="center">
+			    	<button id="volverInicio" class="icon-arrow-left btn-left"></button>
+			    	<button class="icon-home-pic" id="btHome"></button>
+			    	<button  class="btn-exit icon-menu  btn-right"></button>
+			</div>
+		</div>      
+	</div>
+</body>
+</html>

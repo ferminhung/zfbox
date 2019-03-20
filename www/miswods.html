@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div data-role="page" id="miswods">
+        <div data-role="panel" id="slidermenu"> 
+    	<h3>Escoge tu ejercicio favorito</h3><br>
+	        <ul data-role="listview" >
+		          	<li><a id="Burpes" ><span class="icon-user"></span> Burpes</a></li>
+
+	    </div>
+        <div data-role="main" class="ui-content">
+			<div class="bar">
+				<a class="btn-for-slider icon-search" href="#slidermenu"></a>
+				<img id="btHome" class="img-logo" src="img/logo-foot.png">
+				<div class="btn-top-sush"><div class="small-text text-white">BurBit</div><div class="big-text text-red">Mis WODs Preferidos</div></div>
+			</div>
+			<br>
+            <select id="listaWODs">
+  		        <option value="---">Selecciona tu WOD</option>
+  		        <option value="SIN">Sin WODs Preferidos</option>
+            </select>              
+			<div id="itemswod">
+			</div>
+			<center><label id="labComentario" class="text-red" ></label></center>
+			<br>
+			<center><button  id="liQuitarWOD" class="btn-burbit"><span class="icon-folder-minus"></span></span> Quitar WOD</button></center>
+			<center><button  id="liInvitarWOD" class="btn-burbit"><span class="icon-magnet"></span></span> Invitar</button></center>
+			<div id="footer" data-role="footer" data-position="fixed" style="background-color: black;" align="center">
+			    	<button id="volver" class="icon-arrow-left btn-left"></button>
+			    	<button class="icon-home-pic" id="btHome"></button>
+			    	<button  class="btn-exit icon-menu  btn-right"></button>
+			</div>
+		</div>      
+	</div>
+</body>
+</html>
