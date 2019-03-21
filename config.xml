@@ -35,5 +35,5 @@
         <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
-    <preference name="android-minSdkVersion" value="26" />
+    <!-- <preference name="android-minSdkVersion" value="26" /> -->
 </widget>
